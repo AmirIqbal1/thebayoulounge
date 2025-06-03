@@ -7,32 +7,64 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">THE BAYOU<br>LOUNGE</div>
-        <div class="hamburger">☰</div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="cigars.html">Premium Cigars</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <img src="images/homescreen.png" alt="The Bayou Lounge">
-        </section>
-    </main>
-    <footer>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms & Conditions</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">THE BAYOU<br>LOUNGE</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="reservations.html">Reservations</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Events</button>
+                    <div class="dropdown-content">
+                        <a href="events.html#charleston">Charleston Wednesdays</a>
+                        <a href="events.html#jazz">Jazz & Juleps Fridays</a>
+                        <a href="events.html#vinyl">Vinyl & Vibes Sundays</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="menu.html#drinks">Drinks</a>
+                        <a href="menu.html#food">Food</a>
+                    </div>
+                </div>
+                <a href="cigars.html">Premium Cigars</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <p>© 2025 The Bayou Lounge. All rights reserved. All content, including logos, text, images, and event concepts, are the intellectual property of The Bayou Lounge and may not be copied or reused without written permission.</p>
+    </nav>
+
+    <!-- Full-screen Hero Image -->
+    <div class="fullscreen-hero">
+        <img src="images/homescreen.png" alt="The Bayou Lounge">
+        <div class="hero-overlay">
+            <h1>THE BAYOU LOUNGE</h1>
+            <p>Step into the timeless elegance of 1920s New Orleans</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Your content here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <p>© 2025 The Bayou Lounge. All rights reserved. All content, including logos, text, images, and event concepts, are the intellectual property of The Bayou Lounge and may not be copied or reused without written permission.</p>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
