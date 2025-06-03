@@ -1,118 +1,95 @@
-/* Global resets */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
-body, html {
+html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   color: #d4af37;
 }
 
-/* Background images for different pages */
-.bg-image {
+body {
+  display: flex;
+  flex-direction: column;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+}
+
+body.home {
+  background-image: url('../images/homescreen.png');
+}
+body.about {
+  background-image: url('../images/armchair.jpeg');
+}
+body.events {
+  background-image: url('../images/stage-and-dancing.png');
+}
+body.cigars {
+  background-image: url('../images/lounge.jpeg');
+}
+
+/* Overlay text */
+.overlay-text {
+  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/* Centered text overlay */
-.overlay-text {
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
-  color: #d4af37;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border-radius: 8px;
-  max-width: 80%;
+  padding: 2rem;
 }
 
-/* Footer styling */
+.overlay-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.instagram {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #d4af37;
+  margin-top: 1rem;
+}
+
+/* Nav */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #d4af37;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Footer */
 footer {
   background: #f0f0f0;
   color: #000;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.8rem;
-  position: relative;
 }
 
-/* Navbar styling */
-header {
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1rem;
-}
-
-.logo {
-  color: #d4af37;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.navbar {
-  display: flex;
-  gap: 1rem;
-}
-
-.navbar a {
-  color: #d4af37;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #fff;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: #d4af37;
-  cursor: pointer;
-}
-
-/* Instagram handle on homepage */
-.instagram-handle {
-  position: absolute;
-  bottom: 2rem;
-  font-size: 1rem;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-}
-
-/* Mobile responsive */
+/* Responsive text */
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    left: 0;
+  .overlay-text h1 {
+    font-size: 1.5rem;
   }
-
-  .navbar.showing {
-    display: flex;
-  }
-
-  .menu-toggle {
+  nav a {
     display: block;
+    margin: 0.5rem 0;
   }
 }
