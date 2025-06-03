@@ -1,1 +1,3 @@
-document.querySelector('.menu-toggle').onclick=()=>{document.querySelector('.nav').classList.toggle('show')};
+document.querySelector('.menu-icon').addEventListener('click',function(){
+  document.querySelector('.nav').classList.toggle('show');
+});
