@@ -54,3 +54,12 @@ header {
 
 .nav {
   display: none;
+
+footer {
+  background: #f0f0f0;
+  color: #000;
+  text-align: center;
+  padding: 2rem 1rem; /* Increased vertical padding */
+  font-size: 0.8rem;
+  position: relative;
+}
