@@ -7,16 +7,34 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navbar = document.querySelector('.navbar');
+
+  mobileMenu.addEventListener('click', () => {
+    navbar.classList.toggle('showing');
+  });
+</script>
+
 <header>
-  <div class="menu">
-    <div class="menu-icon">☰</div>
-    <nav class="nav">
+  <div class="nav-container">
+    <div class="logo">The Bayou Lounge</div>
+    <div class="menu-toggle" id="mobile-menu">
+      ☰
+    </div>
+    <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="events.html">Events</a>
       <a href="menu.html">Menu</a>
+      <a href="cigars.html">Premium Cigars</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
     </nav>
   </div>
 </header>
+
 
 <div class="fullscreen-bg" style="background-image: url('images/armchair.jpeg');">
   <div class="content">

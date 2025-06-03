@@ -2,6 +2,15 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reservations - The Bayou Lounge</title><link rel="stylesheet" href="style.css"></head>
 <body>
+    <script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navbar = document.querySelector('.navbar');
+
+  mobileMenu.addEventListener('click', () => {
+    navbar.classList.toggle('showing');
+  });
+</script>
+
 <header><div class="logo">The Bayou Lounge</div>
 <div class="menu-toggle">&#9776;</div>
 <nav class="nav">
